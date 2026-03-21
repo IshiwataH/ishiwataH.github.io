@@ -1,32 +1,97 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <title>SAS-シンプルアプリシリーズ</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SAS-シンプルアプリシリーズ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS - シンプルアプリシリーズ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8fafc;
+        }
+        .app-card {
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+        .screenshot {
+            max-width: 280px;
+            border-radius: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
- <!-- main -->
-<body>
-  <main id="main">
-      <font size=4><b>ロト過去番号サーチ</b><br></font>
-      <img src="lotohitnumbersearch_sample.png"><br>
-      <a href="./"><img src="AppleStore.avif"></a><br>
-      <p><a href="https://ishiwatah.github.io/lotohitnumbersearch-privacy-policy.html">プライバシーポリシー</a></p>
-<br>
-<br>
-      <font size=4><b>なんでも抽選</b><br></font>
-      <img src="anyselect_sample.png"><br>
-      <a href="https://apps.apple.com/jp/app/%E7%B0%A1%E6%98%93%E6%8A%BD%E9%81%B8%E3%82%A2%E3%83%97%E3%83%AA/id6751142020" target="_blank"><img src="AppleStore.avif"></a>
-      <p><a href="https://ishiwatah.github.io/anyselect-privacy-policy.html">プライバシーポリシー</a></p>
-    <br>
-<br>
-<br>
-<br>
-         <p><a href="https://kappa2h2takana2i2i.wixsite.com/simpleapp">問い合わせフォーム</a></p> 
-  </main>
- <!-- footer -->
-    <footer role="contentinfo">
+<body class="text-slate-800">
+
+    <header class="py-12 bg-white border-b border-slate-200">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">SAS</h1>
+            <p class="mt-2 text-lg text-slate-500 italic">Simple App Series</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            
+            <section class="app-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center">
+                <h2 class="text-2xl font-bold mb-6 text-slate-900">ロト過去番号サーチ</h2>
+                
+                <div class="mb-8">
+                    <img src="lotohitnumbersearch_sample.png" alt="ロト過去番号サーチ スクリーンショット" class="screenshot">
+                </div>
+
+                <div class="w-full space-y-4 text-center">
+                    <p class="text-slate-600 text-sm leading-relaxed px-4">
+                        ロト6の過去の当選番号を瞬時に検索。<br>自分の選んだ数字が過去に当たっていたか、すぐに分かります。
+                    </p>
+                    
+                    <div class="flex flex-col items-center space-y-4 pt-4">
+                        <a href="#" class="inline-block transform active:scale-95 transition-transform">
+                            <img src="AppleStore.avif" alt="App Storeからダウンロード" class="h-12">
+                        </a>
+                        <a href="https://ishiwatah.github.io/lotohitnumbersearch-privacy-policy.html" class="text-sm text-blue-500 hover:underline">プライバシーポリシー</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="app-card bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-center">
+                <h2 class="text-2xl font-bold mb-6 text-slate-900">なんでも抽選</h2>
+                
+                <div class="mb-8">
+                    <img src="anyselect_sample.png" alt="なんでも抽選 スクリーンショット" class="screenshot">
+                </div>
+
+                <div class="w-full space-y-4 text-center">
+                    <p class="text-slate-600 text-sm leading-relaxed px-4">
+                        日常のちょっとした決断をシンプルに。<br>項目を入力するだけで、素早く抽選を行える便利ツールです。
+                    </p>
+                    
+                    <div class="flex flex-col items-center space-y-4 pt-4">
+                        <a href="https://apps.apple.com/jp/app/%E7%B0%A1%E6%98%93%E6%8A%BD%E9%81%B8%E3%82%A2%E3%83%97%E3%83%AA/id6751142020" class="inline-block transform active:scale-95 transition-transform">
+                            <img src="AppleStore.avif" alt="App Storeからダウンロード" class="h-12">
+                        </a>
+                        <a href="https://ishiwatah.github.io/anyselect-privacy-policy.html" class="text-sm text-blue-500 hover:underline">プライバシーポリシー</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="py-16 bg-slate-100">
+        <div class="container mx-auto px-4 text-center">
+            <a href="https://kappa2h2takana2i2i.wixsite.com/simpleapp" class="inline-flex items-center px-6 py-3 bg-slate-800 text-white rounded-full hover:bg-slate-700 transition-colors">
+                <span>お問い合わせフォーム</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
+            <p class="mt-8 text-slate-400 text-xs tracking-widest uppercase">&copy; 2026 SAS - Simple App Series</p>
+        </div>
     </footer>
+
 </body>
 </html>
